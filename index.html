@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<title> Ma Banque en ligne </title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Mur de connexion -->
+
+<div id="loginPage" class="login">
+
+<h2>Connexion Banque</h2>
+
+<input type="email" id="email" placeholder="Email">
+<input type="password" id="password" placeholder="Mot de passe">
+
+<button onclick="login()">Se connecter</button>
+
+<p id="error"></p>
+
+</div>
+
+
+<!-- Interface bancaire -->
+
+<div id="app" class="container" style="display:none;">
+
+<div class="sidebar">
+
+<h2>BNP</h2>
+
+<ul>
+<li>Mes comptes</li>
+<li>Mes opérations</li>
+<li>Virements</li>
+<li>Portefeuille</li>
+<li>Mon budget</li>
+</ul>
+
+</div>
+
+
+<div class="main">
+
+<div class="header">
+
+<input type="text" placeholder="Recherche">
+
+<div class="user">Utilisateur</div>
+
+</div>
+
+
+<div class="account-card">
+
+<h3>Compte Chèque</h3>
+
+<p>Solde</p>
+
+<h1 id="balance">12 890,00 €</h1>
+
+</div>
+
+
+<div class="blocked">
+! COMPTE BLOQUÉ
+</div>
+
+
+<div class="operations">
+
+<h3>Dernières opérations</h3>
+
+<div class="op">
+<span>Carte 02/03/2015</span>
+<span>-399,60 €</span>
+</div>
+
+<div class="op">
+<span>Virement reçu</span>
+<span class="plus">+500 €</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
